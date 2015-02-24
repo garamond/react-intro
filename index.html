@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Pinball Tycoon</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>Pinball Tycoon</h1>
+    <div>
+        <h2>Requirements</h2>
+        <ul>
+            <li>Ball runs from Start through either Gate A or B into one of the 4 buckets.</li>
+            <li>The exit mode of each of the 3 gates can be set individually.</li>
+            <li>A new round starts when the player changes the settings on one of the gates.</li>
+        </ul>
+    </div>
+    <div>
+        <h2>Mockup</h2>
+        <p>Shows the state of the system after a round has been played and the ball has landed in bucket 2.</p>
+
+        <div id="app">
+            <!-- Begin Mock -->
+            <div>
+                <div>
+                    <h3>Start</h3>
+                    <select>
+                        <option>Left</option>
+                        <option>Right</option>
+                    </select>
+                    <div class="gates">
+                        <div>
+                            <h3>Gate A</h3>
+                            <select>
+                                <option>Left</option>
+                                <option selected>Right</option>
+                            </select>
+                            <div class="buckets">
+                                <span>
+                                    1
+                                </span>
+                                <span class="win">
+                                    2
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Gate B</h3>
+                            <select>
+                                <option>Left</option>
+                                <option>Right</option>
+                            </select>
+                            <div class="buckets">
+                                <span>
+                                    3
+                                </span>
+                                <span>
+                                    4
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mock -->
+        </div>
+    </div>
+    <div class="clear" />
+    <div>
+        <h2>Next steps</h2>
+        <p>Edit the <a href="app.jsx">JSX source skeleton</a> in such a way that <a href="app.html">the application</a> fulfills the requirements.</p>
+        <p>Take a look at the <a href="example.html">example</a> if you don't know where to start.</p>
+    </div>
+</body>
+</html>

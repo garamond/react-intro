@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+}
+.large {
+    font-size: 5em;
+}
+#app {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 10px 20px 20px 20px;
+    width:18em;
+    background-color: #eee;
+}
+.gates > div {
+    display: inline-block;
+}
+.buckets {
+    margin: 10px;
+}
+.buckets span {
+    padding: 3px 20px 3px 20px;
+    margin: 3px;
+    background-color: #bbb;
+    border-radius: 3px;
+}
+.buckets span.win {
+    font-weight: bold;
+    color: white;
+    background-color: red;
+}
+

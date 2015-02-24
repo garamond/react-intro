@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="lib/react.js"></script>
+    <script src="lib/JSXTransformer.js"></script>
+    <link rel="stylesheet" href="app.css">
+
+    <script type="text/jsx">
+
+        var Switch = React.createClass({
+            getInitialState: function() {
+                return {mode: 'A'};
+            },
+            _handleChange: function(e) {
+                this.setState({mode: e.target.value});
+            },
+            render: function() {
+                return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <select value={this.state.mode}
+                                onChange={this._handleChange}>
+                            <option value='A'>A</option>
+                            <option value='B'>B</option>
+                        </select>
+                        <p className="large">
+                            {this.state.mode=='A' && '\u25D0' || '\u25D1'}
+                        </p>
+                    </div>
+                );
+            }
+        });
+
+        React.render(<Switch title="My Switch" />,
+                     document.getElementById('app'));
+
+    </script>
+
+</head>
+<body>
+    <div id="app" />
+</body>
+</html>
