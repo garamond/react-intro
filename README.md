@@ -2,7 +2,7 @@
 
 ## Contents
 
- * `slides/` - slides of Meetup presentation
+ * `slides.pdf` - slides of Meetup presentation
  * `example.html` – self-contained example of a simple React component
  * `index.html` – problem statement for hands-on coding session
  * `app.*` – skeleton files making up the application
